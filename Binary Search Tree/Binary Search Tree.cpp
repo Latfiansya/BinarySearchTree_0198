@@ -56,9 +56,9 @@ public:
 
 	void search(string element, Node*& parent, Node*& currentNode)
 	{
-		// this function searches the currentnode od thee specified node as well as the current node of it's parent
+		// this function searches the currentnode of tree specified node as well as the current node of it's parent
 		currentNode = ROOT;
-		parent = nullptr;
+		parent = nullptr; 
 		while ((currentNode != nullptr) && (currentNode->info != element))
 		{
 			parent = currentNode;
