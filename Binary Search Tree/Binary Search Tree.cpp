@@ -112,7 +112,7 @@ public:
 				inorder(ptr->rightchild);
 				cout << ptr->info << " ";
 			}
-		}
+		} 
 };
 
 int main()
