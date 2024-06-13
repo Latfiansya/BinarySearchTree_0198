@@ -97,7 +97,7 @@ public:
 				inorder(ptr->leftchild);
 				inorder(ptr->rightchild);
 			}
-		}
+		} 
 
 		void postorder(Node* ptr)
 		{
