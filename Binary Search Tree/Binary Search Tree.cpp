@@ -42,7 +42,7 @@ public:
 		if (parent == nullptr) // if the parent is null (tree is empety)
 		{
 			ROOT = newNode; // mark the new node as root
-			return; //exit
+			return; //exit 
 		}
 		if (element < parent->info) // if the value in the data field of the new node is less than that of the currentnode
 		{
@@ -114,3 +114,34 @@ public:
 			}
 		}
 };
+
+int main()
+{
+	BinaryTree x;
+	while (true)
+	{
+		cout << "\nMenu" << endl;
+		cout << "1. Implement insert operation" << endl;
+		cout << "2. Perform inorder operation" << endl;
+		cout << "3. Perform preorder operation" << endl;
+		cout << "4. Perform postorder operation" << endl;
+		cout << "5. Exit" << endl;
+		cout << "\nEnter your choice (1-5) : ";
+
+		char ch;
+		cin >> ch;
+		cout << endl;
+
+		switch (ch)
+		{
+		case '1' :
+		{
+			cout << "Enter"
+		}
+		default:
+			break;
+		}
+
+
+	}
+}
