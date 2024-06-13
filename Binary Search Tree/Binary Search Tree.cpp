@@ -22,7 +22,7 @@ class BinaryTree
 {
 public:
 	Node* ROOT;
-
+	  
 	BinaryTree()
 	{
 		ROOT = nullptr; //initializing root to null
@@ -92,6 +92,12 @@ public:
 			{
 				cout << "Tree is empty" << endl;
 				return;
+			}
+			if (ptr != nullptr)
+			{
+				cout << ptr->info << " ";
+				inorder(ptr->leftchild);
+				inorder(ptr->rightchild);
 			}
 		}
 };
