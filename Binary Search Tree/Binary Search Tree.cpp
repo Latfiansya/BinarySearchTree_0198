@@ -30,7 +30,7 @@ public:
 
 	void insert(string element) // insert a node in the binaru search tree
 	{
-		Node* newNode = new Node(element, nullptr, nullptr); // allocate memory for the new node
+		Node* newNode = new Node(element, nullptr, nullptr); // allocate memory for the new node 
 		newNode->info = element; // assign value ti data field of the new node
 		newNode->leftchild = nullptr; // make the left child of the new node point to null
 		newNode->rightchild = nullptr; // make right child of the new node point to null
@@ -44,12 +44,10 @@ public:
 			ROOT = newNode; // mark the new node as root
 			return; //exit
 		}
-
 		if (element < parent->info) // if the value in the data field of the new node is less than that of the currentnode
 		{
 			parent->leftchild = newNode; // make the left child of the parent point to the new node
 		}
-
 		if (element > parent->info) // if the value in the data field of the new node is greater than that of the currentnode
 		{
 			parent->rightchild = newNode; // make the right child of the parent point to the new node
@@ -98,6 +96,21 @@ public:
 				cout << ptr->info << " ";
 				inorder(ptr->leftchild);
 				inorder(ptr->rightchild);
+			}
+		}
+
+		void postorder(Node* ptr)
+		{
+			if (ROOT == nullptr)
+			{
+				cout << "Tree is empty" << endl;
+				return;
+			}
+			if (ptr != nullptr)
+			{
+				inorder(ptr->leftchild);
+				inorder(ptr->rightchild);
+				cout << ptr->info << " ";
 			}
 		}
 };
