@@ -122,9 +122,9 @@ int main()
 	{
 		cout << "\nMenu" << endl;
 		cout << "1. Implement insert operation" << endl;
-		cout << "2. Perform inorder operation" << endl;
-		cout << "3. Perform preorder operation" << endl;
-		cout << "4. Perform postorder operation" << endl;
+		cout << "2. Perform inorder traversal" << endl;
+		cout << "3. Perform preorder traversal" << endl;
+		cout << "4. Perform postorder traversal" << endl;
 		cout << "5. Exit" << endl;
 		cout << "\nEnter your choice (1-5) : ";
 
@@ -159,14 +159,11 @@ int main()
 		}
 		case '5':
 		{
-			return;
-			break;
+			return 0;
 		}
 		default:
-			cout <<
+			cout << "Invalid input!" << endl;
 			break;
 		}
-
-
 	}
 }
